@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script>
+        /*
+        Variable me with the values
+        */
+        var me = {
+            firstName: 'Sowjanya',
+            lastName: 'Manthripragada',
+            age: 40,
+            job: 'IT Front end developer',
+            pets: []
+        };
+        // calls the function on load of page to display the details in the log with adding of all var and hard values
+        window.onload = function() {
+            var petCount = me.pets.length;
+            var petString = petCount === 0 ? 'I have no pets.' :
+                            petCount === 1 ? 'I have 1 pet at home.' :
+                            `I have ${petCount} pets at home.`;
+
+            var aboutMe = "My name is " +me.firstName + me.lastName+ "and I am "+ me.age+ "years old "+me.job+". "+petString;
+            console.log(aboutMe);
+        }
+
+        
+    </script>
+</head>
+<body>
+</body>
+</html>

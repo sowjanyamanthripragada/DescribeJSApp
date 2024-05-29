@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Self Describe</title>
+    <script>
+        /*
+        describeSelf function with the parameters of name, age and favourite food
+        Concatenate with hard code valuues and return
+        Str1,str2,str3 are used to keep hard code values
+        */
+        function describeSelf(name, age, favouriteFood) {
+            var str1="My name is";
+            var str2 ="and I am";
+            var str3="years old. My favourite food is ";
+            return str1 +name+str2+age+str3+favouriteFood +".";
+     }
+     /*
+        on load of page invoking the describeSelf function with name, aga, food
+        desc1,desc2,desc3,desc4 are varaibles invoking the describeself with values and retrun values
+        */
+        window.onload = function() {
+            var desc1 = describeSelf('Sowjanya', 38, 'pizza');
+            var desc2 = describeSelf('Saanvi', 15, 'sushi');
+            var desc3 = describeSelf('Maanvi', 12, 'pasta');
+            var desc4 = describeSelf('Damodar', 42, 'Biryani');
+            /*
+        Display in console 
+        */
+            console.log(desc1);
+            console.log(desc2);
+            console.log(desc3);
+            console.log(desc4);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
